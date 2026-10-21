@@ -193,7 +193,7 @@ scene.onBeforeRenderObservable.add(() => {
     const direction = new BABYLON.Vector3(strafe, 0, forward);
     direction.normalize();
     const cameraForward = new BABYLON.Vector3(
-      Math.sin(camera.alpha), 0, Math.cos(camera.alpha)
+      -Math.sin(camera.alpha), 0, -Math.cos(camera.alpha)
     );
     const cameraRight = new BABYLON.Vector3(cameraForward.z, 0, -cameraForward.x);
     const move = cameraRight.scale(direction.x).add(cameraForward.scale(direction.z));
