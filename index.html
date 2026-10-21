@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#12241f" />
+    <meta name="description" content="Kenya Life is a 3D browser-based social life simulation prototype." />
+    <title>Kenya Life — Campus District</title>
+  </head>
+  <body>
+    <main id="game-shell">
+      <canvas id="renderCanvas" aria-label="Kenya Life 3D game world"></canvas>
+      <header class="topbar">
+        <div class="brand">
+          <span class="brand-mark">KL</span>
+          <div>
+            <div class="brand-title">KENYA LIFE</div>
+            <div class="brand-subtitle">YOUR STORY STARTS HERE</div>
+          </div>
+        </div>
+        <div class="location-pill"><span class="online-dot"></span> CAMPUS DISTRICT <span class="version">PRE-ALPHA 0.1</span></div>
+      </header>
+      <section class="player-card">
+        <div class="avatar">Y</div>
+        <div class="player-details"><strong>New Student</strong><span>Campus newcomer</span></div>
+        <div class="wallet"><span>WALLET</span><strong>KSh 2,000</strong></div>
+      </section>
+      <div class="objective-card">
+        <span class="eyebrow">YOUR FIRST DAY</span>
+        <strong>Explore your new campus</strong>
+        <span>Walk around and discover your new surroundings.</span>
+      </div>
+      <div id="interaction-prompt" class="interaction-prompt" hidden>Press <kbd>E</kbd> to interact</div>
+      <div id="toast" class="toast" role="status" aria-live="polite"></div>
+      <footer class="controls">
+        <span><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> Move</span>
+        <span><kbd>Mouse</kbd> Look around</span>
+        <span><kbd>E</kbd> Interact</span>
+      </footer>
+      <div class="crosshair" aria-hidden="true"></div>
+      <div id="loading" class="loading"><div class="loading-mark">KL</div><strong>Preparing your world...</strong><span>KENYA LIFE · CAMPUS DISTRICT</span></div>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
